@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.title-h1 {
+  color: #191826;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+}
+
+.title-h2 {
+  color: #FCFAF9;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.body-1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.body-2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.button, .button-android, .button-apple {
+  align-items: center;
+  border: none;
+  border-radius: 1.2rem;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 6.1rem;
+  justify-content: center;
+  padding: 1.5rem 0 1.4rem 0;
+  width: 100%;
+}
+
+.button-apple {
+  background-color: #191826;
+  color: #FCFAF9;
+}
+.button-apple :hover {
+  background-color: #66E2DC;
+}
+
+.button-apple::before {
+  content: url("../assets/icon-apple.svg");
+}
+
+.button-apple::after {
+  content: "iOS Download";
+  margin-left: 0.8rem;
+}
+
+.button-android {
+  background-color: #FCFAF9;
+  color: #191826;
+}
+.button-android :hover {
+  background-color: #FFB964;
+}
+
+.button-android::before {
+  content: url("../assets/icon-android.svg");
+}
+
+.button-android::after {
+  content: "Android Download";
+  margin-left: 0.8rem;
+}
+
+body {
+  background-color: #FCFAF9;
+  background-image: url("../assets/bg-main-mobile.png");
+  background-position: top -12rem right -12rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #191826;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 88%;
+}
+
+.header {
+  margin: 4rem auto;
+}
+.header__logo, .footer__logo {
+  display: inline-block;
+}
+.header__logo img, .footer__logo img {
+  height: 3.2rem;
+}
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  margin: 6.8rem 0;
+}
+
+.main {
+  aspect-ratio: 1/1;
+  background-color: #191826;
+  background-image: url("../assets/bg-pattern-2.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  border-radius: 1.2rem;
+  margin-top: 17rem;
+  position: relative;
+}
+.main figure {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+.main figure img {
+  margin: 0 auto;
+  margin-top: -10rem;
+  width: 20rem;
+}
+.main .card {
+  background-color: #FA7453;
+  border-radius: 1.2rem;
+  color: #FCFAF9;
+  height: auto;
+  margin-top: 4.8rem;
+  padding: 4.8rem 0;
+}
+.main .card__title {
+  margin-bottom: 1.2rem;
+}
+.main .card__text {
+  margin-bottom: 3.6rem;
+}
+.main .card__price {
+  margin-bottom: 3.2rem;
+}
+.main .card__price h3 {
+  align-items: center;
+  display: flex;
+  font-size: 6.5rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+}
+.main .card__price h3 span {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  margin-left: 1.6rem;
+}
+.main .card__buttons :nth-child(1) {
+  margin-bottom: 1.6rem;
+}
+
+.footer {
+  display: grid;
+  margin: 6.4rem auto 4rem;
+}
+.footer__info {
+  margin: 3.2rem auto 6.4rem;
+}
+.footer__info span {
+  font-weight: 800;
+}
+.footer__social {
+  display: flex;
+  gap: 2rem;
+}
+.footer__social a {
+  color: #191826;
+  font-size: 2rem;
+}
+.footer__social a :hover {
+  color: #FA7453;
+}
+.footer .attribution {
+  margin: 4.8rem auto 0;
+  opacity: 0.75;
+}
+.footer .attribution a {
+  color: #191826;
+}/*# sourceMappingURL=styles.css.map */

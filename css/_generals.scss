@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+$cyan: #66E2DC;
+$orangeDark: #FA7453;
+$oragneLigth: #FFB964;
+$white: #FCFAF9;
+$dark: #191826;
+$fontPrincipal: 'IBM Plex Sans', sans-serif;
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+

@@ -1,0 +1,124 @@
+@import 'generals';
+@import 'components';
+
+body{
+    background-color: $white;
+    background-image: url('../assets/bg-main-mobile.png');
+    background-position: top -12rem right -12rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: $dark;
+    font-family: $fontPrincipal;
+}
+
+.container{
+    margin: 0 auto;
+    width: 88%;
+}
+
+.header{
+    margin: 4rem auto;
+    &__logo{
+        display: inline-block;
+        img{
+            height: 3.2rem;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+        margin: 6.8rem 0;
+    }
+}
+
+.main{
+    aspect-ratio: 1/1;
+    background-color: $dark;
+    background-image: url('../assets/bg-pattern-2.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-radius: 1.2rem;
+    margin-top: 17rem;
+    position: relative;
+    figure{
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        img{
+            margin: 0 auto;
+            margin-top: -10rem;
+            width: 20rem;
+        }
+    }
+    .card{
+        background-color: $orangeDark;
+        border-radius: 1.2rem;
+        color: $white;
+        height: auto;
+        margin-top: 4.8rem;
+        padding: 4.8rem 0;
+        &__title{
+            margin-bottom: 1.2rem;
+        }
+        &__text{
+            margin-bottom: 3.6rem;
+        }
+        &__price{
+            margin-bottom: 3.2rem;
+            h3{
+                align-items: center;
+                display: flex;
+                font-size: 6.5rem;
+                font-weight: 700;
+                line-height: 5.2rem;
+                span{
+                    font-size: 2rem;
+                    font-weight: 400;
+                    line-height: 3.2rem;
+                    margin-left: 1.6rem;
+                }
+            }
+        }
+        &__buttons{
+            :nth-child(1){
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+}
+
+
+.footer{
+    display: grid;
+    margin: 6.4rem auto 4rem;
+    &__logo{
+        @extend .header__logo
+    }
+    &__info{
+        margin: 3.2rem auto 6.4rem;
+        span{
+            font-weight: 800;
+        }
+    }
+    &__social{
+        display: flex;
+        gap: 2rem;
+        a{
+            color: $dark;
+            font-size: 2rem;
+            :hover{
+                color: $orangeDark;
+            }
+        }
+    }
+    .attribution{
+        margin: 4.8rem auto 0;
+        opacity: 0.75;
+        a{
+            color: $dark;
+        }
+    }
+}
