@@ -5,6 +5,14 @@
     line-height: 4.8rem;
 }
 
+@media (min-width: 768px){
+    .title-h1{
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+    }
+}
+
+
 .title-h2{
     color: $white;
     font-size: 3.2rem;
@@ -15,6 +23,13 @@
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.6rem;
+}
+
+@media (min-width: 768px){
+    .body-1{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
 }
 
 .body-2{

@@ -20,6 +20,12 @@ html, body {
   line-height: 4.8rem;
 }
 
+@media (min-width: 768px) {
+  .title-h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+}
 .title-h2 {
   color: #FCFAF9;
   font-size: 3.2rem;
@@ -32,6 +38,12 @@ html, body {
   line-height: 2.6rem;
 }
 
+@media (min-width: 768px) {
+  .body-1 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
 .body-2 {
   font-size: 1.8rem;
   font-weight: 400;
@@ -95,6 +107,13 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+@media (min-width: 768px) {
+  body {
+    background-image: url("../assets/bg-pattern-1.svg"), url("../assets/bg-main-tablet.png");
+    background-position: top -4rem right -3.5rem, top -20rem left -30rem;
+    background-size: 26rem, 140%;
+  }
+}
 .container {
   margin: 0 auto;
   width: 88%;
@@ -116,6 +135,12 @@ body {
   margin: 6.8rem 0;
 }
 
+@media (min-width: 768px) {
+  .header__info {
+    margin: 9.5rem 0;
+    width: 75%;
+  }
+}
 .main {
   aspect-ratio: 1/1;
   background-color: #191826;
@@ -136,7 +161,7 @@ body {
 .main figure img {
   margin: 0 auto;
   margin-top: -10rem;
-  width: 20rem;
+  width: 60%;
 }
 .main .card {
   background-color: #FA7453;
@@ -172,11 +197,37 @@ body {
   margin-bottom: 1.6rem;
 }
 
+@media (min-width: 768px) {
+  .main {
+    aspect-ratio: 1/1;
+    background-position: top -2rem left 23rem;
+    background-size: 40%;
+    margin: 25rem auto 0;
+    max-height: 60rem;
+    width: 90%;
+  }
+  .main figure {
+    margin-left: 8.5%;
+    max-width: 27rem;
+  }
+  .main figure img {
+    margin-top: -14rem;
+    width: 100%;
+  }
+  .main .card {
+    padding: 4.8rem 2.4rem;
+    position: absolute;
+    right: 8.5%;
+    top: 10rem;
+    width: 40rem;
+  }
+}
 .footer {
   display: grid;
-  margin: 6.4rem auto 4rem;
+  margin: 0 auto 4rem;
 }
 .footer__info {
+  font-size: 1.6rem;
   margin: 3.2rem auto 6.4rem;
 }
 .footer__info span {
@@ -199,4 +250,38 @@ body {
 }
 .footer .attribution a {
   color: #191826;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, -webkit-max-content);
+    grid-template-rows: repeat(3, max-content);
+    margin: 18rem auto 2.4rem;
+  }
+  .footer__logo {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .footer__info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-bottom: 6.4rem;
+  }
+  .footer__social {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    justify-items: end;
+    justify-self: self-end;
+  }
+  .footer .attribution {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    height: 2rem;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
