@@ -12,6 +12,12 @@
     }
 }
 
+@media (min-width: 1280px){
+    .title-h1{
+        font-size: 8.8rem;
+        line-height: 8.8rem;
+    }
+}
 
 .title-h2{
     color: $white;
@@ -32,6 +38,13 @@
     }
 }
 
+@media (min-width: 1280px){
+    .body-1{
+        font-size: 2rem;
+        line-height: 3.4rem;
+    }
+}
+
 .body-2{
     font-size: 1.8rem;
     font-weight: 400;
@@ -42,22 +55,23 @@
     align-items: center;
     border: none;
     border-radius: 1.2rem;
+    cursor: pointer;
     display: flex;
     font-size: 1.8rem;
     font-weight: 700;
     height: 6.1rem;
     justify-content: center;
     padding: 1.5rem 0 1.4rem 0;
-    width: 100%
+    width: 100%;
 }
 
 .button-apple{
     @extend .button;
     background-color: $dark;
     color: $white;
-    :hover{
-        background-color: $cyan;
-    }
+}
+.button-apple:hover{
+    background-color: $cyan;
 }
 
 .button-apple::before{
@@ -73,9 +87,9 @@
     @extend .button;
     background-color: $white;
     color: $dark;
-    :hover{
-        background-color: $oragneLigth;
-    }
+}
+.button-android:hover{
+    background-color: $oragneLigth;
 }
 
 .button-android::before{

@@ -19,8 +19,16 @@ body{
     }
 }
 
+@media (min-width: 1280px) {
+    body{
+        background-image: url('../assets/bg-pattern-1.svg'), url('../assets/bg-main-desktop.png'), ;
+        background-position: top -4rem right 0rem, top -20rem left -30rem;
+    }
+}
+
 .container{
     margin: 0 auto;
+    max-width: 110rem;
     width: 88%;
 }
 
@@ -42,6 +50,7 @@ body{
 
 @media (min-width: 768px){
     .header{
+        margin: 6.2rem auto 0;
         &__info{
             margin: 9.5rem 0;
             width: 75%;
@@ -49,6 +58,14 @@ body{
     }
 }
 
+@media (min-width: 1280px){
+    .header{
+        &__info{
+            margin: 12.8rem 0;
+            width: 80%;
+        }
+    }
+}
 
 .main{
     aspect-ratio: 1/1;
@@ -108,14 +125,12 @@ body{
     }
 }
 
-
 @media (min-width: 768px){
     .main{
-        aspect-ratio: 1/1;
         background-position: top -2rem left 23rem;
         background-size: 40%;
+        height: 60rem;
         margin: 25rem auto 0;
-        max-height: 60rem;
         width: 90%;
         figure{
             margin-left: 8.5%;
@@ -131,6 +146,43 @@ body{
             right:8.5%;
             top:10rem;
             width: 40rem;
+        }
+    }
+}
+
+@media (min-width: 1280px){
+    .main{
+        background-position: top -5rem left 33rem;
+        background-size: 32rem;
+        margin-top: 32rem;
+        width: 110rem;
+        figure{
+            margin-left: 14rem;
+            max-width: 27rem;
+            img{
+                margin-top: -18.5rem;
+                width: 100%;
+            }       
+        }
+        .card{
+            padding: 5.8rem 3.4rem 4.8rem;
+            position: absolute;
+            right:14rem;
+            top:4rem;
+            width: 44.6rem;
+            &__title{
+                font-size: 4rem;
+                margin-bottom: 2.2rem;
+            }
+            &__text{
+                font-size: 2rem;
+                line-height: 3.4rem;
+                margin-bottom: 3.6rem;
+            }
+            &__price{
+                margin-bottom: 4.6rem;
+                margin-top: 4rem;
+            }
         }
     }
 }
@@ -194,6 +246,36 @@ body{
         .attribution{
             grid-column: 1/-1;
             grid-row: 3/4;
+            height: 2rem;
+            margin: 4rem auto 0;
+        }
+    }
+}
+
+@media (min-width: 1280px){
+    .footer{
+        align-items:flex-start;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin: 20rem auto 3.2rem;
+        &__logo{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            height: max-content;
+        }
+        &__info{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin-bottom: 0rem;
+            margin-top: 0;
+        }
+        &__social{
+            align-self: center;
+            grid-column: 2/-1;
+            grid-row: 1/2;
+        }
+        .attribution{
+            grid-row: 2;
             height: 2rem;
             margin: 4rem auto 0;
         }
